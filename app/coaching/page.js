@@ -7,6 +7,8 @@ export const metadata = {
 export default function Coaching() {
     return (
         <div>
+            <br></br>
+            <br></br>
             <h1>COACHING</h1>
             <p>This is the Coaching page.</p>
         </div>

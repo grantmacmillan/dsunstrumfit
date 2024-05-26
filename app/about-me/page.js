@@ -7,6 +7,8 @@ export const metadata = {
 export default function About() {
     return (
         <div>
+            <br></br>
+            <br></br>
             <h1>About Me</h1>
             <p>This is the about me page.</p>
         </div>

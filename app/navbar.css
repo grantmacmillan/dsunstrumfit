@@ -1,0 +1,49 @@
+.navbar-container {
+    /* Semi-transparent background */
+    position: fixed;
+    /* Fixed positioning */
+    width: 100%;
+    /* Full width */
+    z-index: 3;
+    /* Ensure it is above other content */
+    transition: backdrop-filter 0.3s ease;
+    /* Smooth transition for blur effect */
+}
+
+.navbar-container.scrolled {
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #cccccc;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #cccccc;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}

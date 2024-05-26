@@ -1,15 +1,32 @@
 "use client";
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const CustomNavbar = () => {
     const [expanded, setExpanded] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className={`navbar navbar-expand-sm navbar-dark navbar-container ${scrolled ? 'scrolled' : ''}`}>
             <div className="container">
-                <a className="navbar-brand" href="/">Main Street Digital</a>
+                <a className="navbar-brand" href="/">DsunstrumFit</a>
                 <button
                     className="navbar-toggler"
                     type="button"
