@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export const metadata = {
   title: 'DsunstrumFit - Home',
@@ -8,19 +9,27 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="landing">
-      <Image
-        src="/images/landing-temp.jpg"
-        alt="Background Image"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
-      <div className="overlay">
-        <div className="container text-center">
-          <h1>Welcome to DsunstrumFit</h1>
-          <p>This is the landing page.</p>
-        </div>
-      </div>
+      <Container className="h-100 d-flex align-items-center">
+        <Row className="w-100">
+          <Col md={6} className="text-content">
+            <h1>Welcome to DsunstrumFit</h1>
+            <p>This is the landing page.</p>
+          </Col>
+          <Col md={6} className="image-container d-flex justify-content-center align-items-center">
+            <Image
+              src="/images/landing-small.jpg" // Replace with the actual path to the client's image
+              alt="Client Image"
+              width={400}
+              height={400}
+              objectFit="cover"
+              className="clientImage"
+            />
+          </Col>
+        </Row>
+
+      </Container>
+
+
     </div>
   );
 }
