@@ -39,16 +39,16 @@
 }
 
 .nav-link:hover {
-    color: yellow;
+    color: var(--primary-color);
 }
 
 .nav-link.active {
-    color: yellow !important;
+    color: var(--primary-color) !important;
 
 }
 
 .nav-link.contact-link {
-    background-color: yellow;
+    background-color: var(--primary-color);
     color: black !important;
     padding: 8px 16px;
     border-radius: 4px;

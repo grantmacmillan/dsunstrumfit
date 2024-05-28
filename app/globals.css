@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
-  --primary-color: #BAAE29;
+  --primary-color: #DEB841;
   /* Blue */
   --secondary-color: #2ecc71;
   /* Green */
@@ -66,4 +66,17 @@ h6 {
 
 p {
   font-size: var(--font-size-p);
+}
+
+.icon-style {
+  color: var(--text);
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon-style:hover {
+  color: var(--primary-color);
+  /* Change to yellow */
+  transform: translateY(-5px);
+  /* Shift up slightly */
 }

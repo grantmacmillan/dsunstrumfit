@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -11,11 +12,15 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="landing">
-      <Container className="h-100 d-flex align-items-center">
+      <Container className="h-100 d-flex flex-column align-items-center justify-content-center">
         <Row className="w-100">
           <Col md={6} className="text-content">
-            <h1>Transform Your Health</h1>
-            <p>Achieve your fitness goals with personalized training and expert support. Join us today for a healthier, stronger you.</p>
+            <h1>
+              Transform Your <span className="highlight">Health</span>
+            </h1>
+            <p>
+              Achieve your fitness goals with personalized training and expert support. Join us today for a healthier, stronger you.
+            </p>
 
             <Link href="/contact">
               <span className="btn-flip" data-back="Contact Me" data-front="Get Started"></span>
@@ -32,6 +37,21 @@ export default function Home() {
                 className="clientImage"
               />
             </div>
+          </Col>
+        </Row>
+        <Row className="social-media-row w-100 mt-4">
+          <Col className="d-flex justify-content-center">
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={40} className="icon-style" />
+            </a>
+            <a href="https://twitter.com" className="mx-3" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={40} className="icon-style" />
+            </a>
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <FaFacebook size={40} className="icon-style" />
+            </a>
+
+
           </Col>
         </Row>
       </Container>
