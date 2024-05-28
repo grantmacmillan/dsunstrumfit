@@ -22,18 +22,15 @@ export default function Home() {
             </Link>
           </Col>
           <Col md={6} className="image-container d-flex justify-content-center align-items-center">
-            <div className="frame">
-              <div className="frame-overlay"></div>
-              <div className="image-wrapper">
-                <Image
-                  src="/images/landing-small.jpg" // Replace with the actual path to the client's image
-                  alt="Client Image"
-                  width={400}
-                  height={600}
-                  layout="intrinsic"
-                  className="clientImage"
-                />
-              </div>
+            <div className="masked-image">
+              <Image
+                src="/images/landing-small.jpg" // Replace with the actual path to the client's image
+                alt="Client Image"
+                width={400}
+                height={400}
+                layout="intrinsic"
+                className="clientImage"
+              />
             </div>
           </Col>
         </Row>

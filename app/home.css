@@ -15,49 +15,30 @@
     font-size: 1.5rem;
 }
 
-.image-container {
-    position: relative;
-}
-
-.frame {
-    position: relative;
-    display: inline-block;
-}
-
-.frame img {
-    border-radius: 0% 0% 0% 30%;
-}
-
-.frame-overlay {
-    position: absolute;
-    top: -20px;
-    /* Adjust based on desired position */
-    left: 20px;
-    /* Adjust based on desired position */
-    width: 100%;
-    height: 100%;
-    /* Rounded corners */
-    background-color: var(--primary-color);
-    border-radius: 0% 0% 0% 30%;
-
-    /* Semi-transparent yellow background */
-    z-index: -1;
-}
-
-
-.image-wrapper {
-    position: relative;
-
-    /* Match with the Image height */
-    /* Top rounded corners */
-    overflow: hidden;
+.masked-image {
+    filter: drop-shadow(1rem 1rem 0.5rem rgba(0, 0, 0, 0.8));
 
 }
+
 
 .clientImage {
-
-    /* Ensure this is applied to the img element */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    /* Ensure the image fits within the rounded corners */
+    -webkit-mask-image: url('/images/masque2.png');
+    /* Ensure this path is correct */
+    mask-image: url('/images/masque2.png');
+    /* Ensure this path is correct */
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
 
+.clientImage:hover {
+    filter: grayscale(0%);
 }
