@@ -1,11 +1,12 @@
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import CustomNavbar from './components/CustomNavbar';
 import CustomFooter from "./components/CustomFooter";
 import "./navbar.css";
 import "./home.css";
+import "./buttons.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const workSans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dsunstrumfit",
@@ -15,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={workSans.className}>
         <CustomNavbar />
         <main>{children}</main>
         <CustomFooter />

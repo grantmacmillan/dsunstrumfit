@@ -1,14 +1,11 @@
 .navbar-container {
-    /* Semi-transparent background */
     position: fixed;
-    /* Fixed positioning */
     width: 100%;
-    /* Full width */
-    z-index: 3;
-    /* Ensure it is above other content */
-    transition: backdrop-filter 0.3s ease;
-    /* Smooth transition for blur effect */
+    top: 0;
+    z-index: 1000;
 }
+
+
 
 .navbar-container.scrolled {
     backdrop-filter: blur(10px);
@@ -17,33 +14,51 @@
     /* For Safari */
 }
 
+.navbar-container.navbar-expanded {
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+}
+
 .navbar-brand {
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    text-decoration: none;
+
 }
 
-.navbar-brand:hover {
-    color: #cccccc;
-}
 
 .nav-link {
-    color: #ffffff;
-    margin-right: 15px;
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    /* Add this line to remove underline */
+
 }
 
 .nav-link:hover {
-    color: #cccccc;
+    color: yellow;
 }
 
-.navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
+.nav-link.active {
+    color: yellow !important;
+
 }
 
-.navbar-toggler-icon {
-    color: #ffffff;
+.nav-link.contact-link {
+    background-color: yellow;
+    color: black !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    /* Add this line to remove underline */
+
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navbar-collapse {
-    justify-content: flex-end;
+.nav-link.contact-link:hover {
+    background-color: darkorange;
+    color: white !important;
 }

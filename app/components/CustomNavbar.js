@@ -2,10 +2,14 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+
 
 const CustomNavbar = () => {
     const [expanded, setExpanded] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -24,37 +28,38 @@ const CustomNavbar = () => {
     }, []);
 
     return (
-        <nav className={`navbar navbar-expand-sm navbar-dark navbar-container ${scrolled ? 'scrolled' : ''}`}>
-            <div className="container">
-                <a className="navbar-brand" href="/">DsunstrumFit</a>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    aria-controls="navbarNav"
-                    aria-expanded={expanded ? "true" : "false"}
-                    aria-label="Toggle navigation"
-                    onClick={() => setExpanded(!expanded)}
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className={`collapse navbar-collapse ${expanded ? "show" : ""}`} id="navbarNav">
-                    <ul className="navbar-nav me-auto">
-                        <li className="nav-item">
-                            <Link href="/" className="nav-link" onClick={() => setExpanded(false)}>Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="/about-me" className="nav-link" onClick={() => setExpanded(false)}>About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="/coaching" className="nav-link" onClick={() => setExpanded(false)}>Coaching</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="/contact" className="nav-link" onClick={() => setExpanded(false)}>Contact</Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <Navbar
+            expand="md"
+            variant="dark"
+            className={`navbar-container ${scrolled ? 'scrolled' : ''} ${expanded ? 'navbar-expanded' : ''}`}
+            expanded={expanded}
+            onToggle={() => setExpanded(!expanded)}
+        >
+            <Container>
+                <Navbar.Brand as={Link} href="/" passHref>
+                    <span className="navbar-brand">DsunstrumFit</span>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarNav" />
+                <Navbar.Collapse id="navbarNav">
+                    <Nav className="me-auto justify-content-center flex-grow-1">
+                        <Nav.Link as={Link} href="/" passHref>
+                            <span className={`nav-link ${pathname === '/' ? 'active' : ''}`} onClick={() => setExpanded(false)}>Home</span>
+                        </Nav.Link>
+                        <Nav.Link as={Link} href="/about-me" passHref>
+                            <span className={`nav-link ${pathname === '/about-me' ? 'active' : ''}`} onClick={() => setExpanded(false)}>About</span>
+                        </Nav.Link>
+                        <Nav.Link as={Link} href="/coaching" passHref>
+                            <span className={`nav-link ${pathname === '/coaching' ? 'active' : ''}`} onClick={() => setExpanded(false)}>Coaching</span>
+                        </Nav.Link>
+                    </Nav>
+                    <Nav>
+                        <Nav.Link as={Link} href="/contact" passHref>
+                            <span className="btn-flip" data-back="Contact Me" data-front="Contact Me"></span>
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 };
 
