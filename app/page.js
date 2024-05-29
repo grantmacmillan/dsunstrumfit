@@ -33,7 +33,6 @@ export default function Home() {
                 alt="Client Image"
                 width={400}
                 height={400}
-                layout="intrinsic"
                 className="clientImage"
               />
             </div>
