@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaQuoteRight } from 'react-icons/fa';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -10,50 +10,106 @@ export const metadata = {
 };
 
 export default function Home() {
+
   return (
-    <div className="landing">
-      <Container className="h-100 d-flex flex-column align-items-center justify-content-center">
-        <Row className="w-100">
-          <Col md={6} className="text-content">
-            <h1>
-              Transform Your <span className="highlight">Health</span>
-            </h1>
-            <p>
-              Achieve your <span className="highlight">fitness goals</span> with personalized training and expert support. Join us today for a healthier, stronger you.
-            </p>
+    <>
+      <div className="landing">
+        <Container className="h-100 d-flex flex-column align-items-center justify-content-center">
+          <Row className="w-100">
+            <Col md={6} className="text-content">
+              <h1>
+                Transform Your <span className="highlight">Health</span>
+              </h1>
+              <p>
+                Achieve your <span className="highlight">fitness goals</span> with personalized training and expert support. Join us today for a healthier, stronger you.
+              </p>
 
-            <Link href="/contact">
-              <span className="btn-flip" data-back="Contact Me" data-front="Get Started"></span>
-            </Link>
+              <Link href="/contact">
+                <span className="btn-flip" data-back="Contact Me" data-front="Get Started"></span>
+              </Link>
+            </Col>
+            <Col md={6} className="image-container d-flex justify-content-center align-items-center">
+              <div className="masked-image">
+                <Image
+                  src="/images/landing-small.jpg" // Replace with the actual path to the client's image
+                  alt="Client Image"
+                  width={400}
+                  height={400}
+                  className="clientImage"
+                />
+              </div>
+            </Col>
+          </Row>
+          <Row className="social-media-row w-100 mt-4">
+            <Col className="d-flex justify-content-center">
+              <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={40} className="icon-style" />
+              </a>
+              <a href="https://twitter.com" className="mx-3" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                <FaTwitter size={40} className="icon-style" />
+              </a>
+              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <FaFacebook size={40} className="icon-style" />
+              </a>
+
+
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <Container>
+        <Row>
+          <Col md={4}>
+            <figure className="snip1533">
+              <figcaption>
+                <div className="icon-container">
+                  <FaQuoteRight className="testimonial-icon" />
+                </div>
+                <blockquote>
+                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                </blockquote>
+                <h3>Wisteria Ravenclaw</h3>
+                <h4>Google Inc.</h4>
+              </figcaption>
+            </figure>
           </Col>
-          <Col md={6} className="image-container d-flex justify-content-center align-items-center">
-            <div className="masked-image">
-              <Image
-                src="/images/landing-small.jpg" // Replace with the actual path to the client's image
-                alt="Client Image"
-                width={400}
-                height={400}
-                className="clientImage"
-              />
-            </div>
+          <Col md={4}>
+            <figure className="snip1533">
+              <figcaption>
+                <div className="icon-container">
+                  <FaQuoteRight className="testimonial-icon" />
+                </div>
+                <blockquote>
+                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                </blockquote>
+                <h3>Wisteria Ravenclaw</h3>
+                <h4>Google Inc.</h4>
+              </figcaption>
+            </figure>
+          </Col>
+          <Col md={4}>
+            <figure className="snip1533">
+              <figcaption>
+                <div className="icon-container">
+                  <FaQuoteRight className="testimonial-icon" />
+                </div>
+                <blockquote>
+                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                </blockquote>
+                <h3>Wisteria Ravenclaw</h3>
+                <h4>Google Inc.</h4>
+              </figcaption>
+            </figure>
           </Col>
         </Row>
-        <Row className="social-media-row w-100 mt-4">
-          <Col className="d-flex justify-content-center">
-            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={40} className="icon-style" />
-            </a>
-            <a href="https://twitter.com" className="mx-3" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-              <FaTwitter size={40} className="icon-style" />
-            </a>
-            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-              <FaFacebook size={40} className="icon-style" />
-            </a>
 
 
-          </Col>
-        </Row>
       </Container>
-    </div>
+
+      <div>
+
+      </div>
+    </>
+
   );
 }
