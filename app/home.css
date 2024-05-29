@@ -90,7 +90,7 @@
 
 .snip1533 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    color: var(--text);
+    color: #000;
     display: inline-block;
     margin: 35px 10px 10px;
     position: relative;
@@ -99,6 +99,7 @@
     background-color: var(--primary-color);
     border-radius: 5px;
     border-top: 5px solid var(--text);
+    text-shadow: none;
 }
 
 .snip1533 figcaption {
@@ -129,7 +130,7 @@
 }
 
 .snip1533 h3 {
-    color: #3c3c3c;
+    color: #000;
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
@@ -140,6 +141,8 @@
     font-weight: 400;
     margin: 0;
     opacity: 0.5;
+    color: #000;
+
 }
 
 .snip1533 blockquote {
