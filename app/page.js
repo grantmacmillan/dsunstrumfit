@@ -19,7 +19,7 @@ export default function Home() {
               Transform Your <span className="highlight">Health</span>
             </h1>
             <p>
-              Achieve your fitness goals with personalized training and expert support. Join us today for a healthier, stronger you.
+              Achieve your <span className="highlight">fitness goals</span> with personalized training and expert support. Join us today for a healthier, stronger you.
             </p>
 
             <Link href="/contact">
