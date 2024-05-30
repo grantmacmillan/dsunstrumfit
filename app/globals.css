@@ -72,6 +72,14 @@ p {
 
 }
 
+li {
+  color: var(--text);
+  font-size: var(--font-size-p);
+
+  text-shadow: 1px 1px #000;
+
+}
+
 .icon-style {
   color: var(--text);
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));

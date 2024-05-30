@@ -16,3 +16,28 @@
     color: var(--primary-color);
     font-weight: 600;
 }
+
+.custom-bullets {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-bullets li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.bullet-icon {
+    margin-right: 8px;
+    margin-top: 4px;
+    /* Adjust this value to align the icon with the text */
+    flex-shrink: 0;
+    /* Prevents the icon from shrinking */
+    width: 1.2em;
+    /* Set the desired size for the icon */
+    height: 1.2em;
+    /* Set the desired size for the icon */
+    color: var(--primary-color);
+    text-shadow: 10px 10px #000;
+}

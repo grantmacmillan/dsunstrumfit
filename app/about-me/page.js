@@ -1,4 +1,6 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaDumbbell } from 'react-icons/fa';
+import { IoBarbellOutline } from "react-icons/io5";
+
 import Image from 'next/image';
 import profilePic from "../../public/images/landing-small.jpg";
 import { Container, Row, Col } from 'react-bootstrap';
@@ -47,17 +49,37 @@ export default function About() {
                     <Row>
                         <Col md={6}>
                             <h3 className='about-subheading'>Training</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim.
-                                Cras feugiat malesuada orci, sit amet lacinia nulla ultricies et.
-                            </p>
+                            <ul className='custom-bullets'>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Nullam in venenatis enim.
+                                </li>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Cras feugiat malesuada orci.
+                                </li>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Sit amet lacinia nulla ultricies et.
+                                </li>
+                            </ul>
                         </Col>
                         <Col md={6}>
                             <h3 className='about-subheading'>Certifications</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim.
-                                Cras feugiat malesuada orci, sit amet lacinia nulla ultricies et.
-                            </p>
+                            <ul className='custom-bullets'>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Nullam in venenatis enim.
+                                </li>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Cras feugiat malesuada orci.
+                                </li>
+                                <li>
+                                    <IoBarbellOutline className='bullet-icon' /> Sit amet lacinia nulla ultricies et.
+                                </li>
+                            </ul>
                         </Col>
                     </Row>
                 </Col>
