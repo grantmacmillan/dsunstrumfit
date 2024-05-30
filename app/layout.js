@@ -5,6 +5,7 @@ import CustomFooter from "./components/CustomFooter";
 import "./navbar.css";
 import "./home.css";
 import "./buttons.css";
+import "./about-me/about-me.css";
 
 const workSans = Work_Sans({ subsets: ["latin"] });
 

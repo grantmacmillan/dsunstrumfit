@@ -10,6 +10,11 @@
     margin-bottom: 20px;
 }
 
+.text-content p {
+    text-shadow: 2px 2px #000;
+
+}
+
 .text-content h1 .highlight {
     font-weight: 700;
     color: var(--primary-color);

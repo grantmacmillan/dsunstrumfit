@@ -15,12 +15,12 @@ const CustomFooter = () => {
 
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 text-center">
                         <h5>Dsunstrumfit</h5>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 text-center">
                         <h5>Contact Information</h5>
-                        <p>Email: example@example.com</p>
+                        <p>Email: dylan@gmail.com</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Location: Stouffville, Ontario</p>
                     </div>

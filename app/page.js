@@ -35,7 +35,7 @@ export default function Home() {
                   alt="Client Image"
                   width={400}
                   height={400}
-                  className="clientImage"
+                  className="clientImage img-fluid"
                 />
               </div>
             </Col>

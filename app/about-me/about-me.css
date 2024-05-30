@@ -1,0 +1,18 @@
+.about-me-container {
+    padding-top: 60px;
+}
+
+.about-subheading {
+    color: var(--primary-color);
+    font-weight: 200;
+}
+
+.about-social-icons {
+
+    margin-top: 1.2rem;
+}
+
+.email-highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+}
