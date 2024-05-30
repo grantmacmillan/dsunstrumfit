@@ -80,3 +80,14 @@ p {
   transform: translateY(-5px);
   /* Shift up slightly */
 }
+
+.section-heading {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.section-subheading {
+  color: var(--text);
+  opacity: 0.6;
+  font-weight: 200;
+}

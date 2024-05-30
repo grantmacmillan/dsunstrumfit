@@ -89,22 +89,21 @@
 
 
 .snip1533 {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    color: #000;
     display: inline-block;
     margin: 35px 10px 10px;
     position: relative;
     text-align: center;
     width: 100%;
-    background-color: var(--primary-color);
+    height: 100%;
+    background-color: transparent;
     border-radius: 5px;
-    border-top: 5px solid var(--text);
-    text-shadow: none;
+    border-top: 5px solid var(--primary-color);
 }
 
 .snip1533 figcaption {
-    padding: 13% 10% 12%;
+    padding: 40px 5% 5%;
     position: relative;
+    color: var(--text);
     /* Ensure absolute positioning of the icon works */
 }
 
@@ -113,7 +112,7 @@
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: var(--primary-color);
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     width: 60px;
@@ -124,15 +123,15 @@
 }
 
 .testimonial-icon {
-    color: var(--primary-color);
+    color: var(--text);
     font-size: 32px;
     line-height: 60px;
 }
 
 .snip1533 h3 {
-    color: #000;
+    color: var(--primary-color);
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 24px;
     margin: 10px 0 5px;
 }
@@ -141,7 +140,7 @@
     font-weight: 400;
     margin: 0;
     opacity: 0.5;
-    color: #000;
+    color: var(--primary-color);
 
 }
 

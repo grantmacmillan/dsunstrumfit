@@ -57,47 +57,51 @@ export default function Home() {
           </Row>
         </Container>
       </div>
+      <Container className="text-center ">
+        <h1 className="section-heading">Testimonials</h1>
+        <h4 className="section-subheading">See what my clients have to say</h4>
+      </Container>
       <Container>
         <Row>
-          <Col md={4}>
+          <Col md={4} className='d-flex '>
             <figure className="snip1533">
               <figcaption>
                 <div className="icon-container">
                   <FaQuoteRight className="testimonial-icon" />
                 </div>
                 <blockquote>
-                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </blockquote>
-                <h3>Wisteria Ravenclaw</h3>
-                <h4>Google Inc.</h4>
+                <h3>Peter McLovin</h3>
+                <h4>Personal Training</h4>
               </figcaption>
             </figure>
           </Col>
-          <Col md={4}>
+          <Col md={4} className='d-flex '>
             <figure className="snip1533">
               <figcaption>
                 <div className="icon-container">
                   <FaQuoteRight className="testimonial-icon" />
                 </div>
                 <blockquote>
-                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </blockquote>
-                <h3>Wisteria Ravenclaw</h3>
-                <h4>Google Inc.</h4>
+                <h3>Bill White</h3>
+                <h4>Diet Plan</h4>
               </figcaption>
             </figure>
           </Col>
-          <Col md={4}>
+          <Col md={4} className='d-flex '>
             <figure className="snip1533">
               <figcaption>
                 <div className="icon-container">
                   <FaQuoteRight className="testimonial-icon" />
                 </div>
                 <blockquote>
-                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </blockquote>
-                <h3>Wisteria Ravenclaw</h3>
-                <h4>Google Inc.</h4>
+                <h3>John Smith</h3>
+                <h4>Workout Plan</h4>
               </figcaption>
             </figure>
           </Col>
