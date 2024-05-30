@@ -130,16 +130,14 @@
 
 .snip1533 h3 {
     color: var(--primary-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
+    font-weight: 400;
     margin: 10px 0 5px;
 }
 
 .snip1533 h4 {
-    font-weight: 400;
+    font-weight: 200;
     margin: 0;
-    opacity: 0.5;
+    opacity: 0.6;
     color: var(--primary-color);
 
 }
