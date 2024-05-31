@@ -6,6 +6,7 @@ import "./navbar.css";
 import "./home.css";
 import "./buttons.css";
 import "./about-me/about-me.css";
+import "./coaching/coaching.css";
 
 const workSans = Work_Sans({ subsets: ["latin"] });
 

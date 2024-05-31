@@ -1,0 +1,17 @@
+.coaching-container {
+    padding-top: 60px;
+}
+
+.price-tag {
+    font-size: 1.25em;
+    font-weight: 200;
+    color: var(--primary-color);
+    /* Adjust color as needed */
+    margin: 10px 0;
+}
+
+.section-heading-small {
+    font-weight: 300;
+    color: var(--primary-color);
+    /* Adjust color as needed */
+}
