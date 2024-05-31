@@ -55,3 +55,41 @@
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
 }
+
+
+
+
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.submit-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.submit-btn-success:hover {
+    background-color: #218838;
+}
+
+.submit-btn svg {
+    margin-right: 8px;
+}
